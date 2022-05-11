@@ -380,7 +380,6 @@ public final class GeoHash {
         double minLon = -180.0, maxLon = 180.0;
         long bit = 0x8000000000000000L;
         long g = 0;
-
         long target = 0x8000000000000000L >>> (5 * length);
         while (bit != target) {
             if (isEven) {
